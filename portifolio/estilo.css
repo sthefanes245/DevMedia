@@ -1,0 +1,57 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.limitar-secao {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.topo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: azure;
+}
+
+.container-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #3d3d3d;
+}
+
+.topo a {
+  text-decoration: none;
+}
+
+.parte01 {
+  flex: 1 0 60%;
+}
+
+.parte01 a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.parte01 span {
+  color: #6592c9;
+}
+
+.parte02 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 150px;
+}
+
+.parte02 a {
+  color: #3d3d3d;
+}

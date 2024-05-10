@@ -1,0 +1,206 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; /*essas das garantem que fique sem margens e fique mais bonita*/
+}
+
+.banner {
+  width: 100%;
+  padding: 120px 80px;
+  background: url("/projeto04/img/banner-topo.jpg") center;
+  background-size: cover;
+}
+/*fazendo a estilização da logo*/
+.logo {
+  max-width: 250px;
+  color: #3c184e;
+}
+
+.paragrafo01 {
+  font-size: 35px;
+  margin: 0 0 5px 0;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.paragrafo02 {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 0;
+}
+/*fim da estilização da logo*/
+
+/*estilização do titulo principal */
+.titulotopo {
+  max-width: 1024px;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 70px auto 0 auto;
+  background-color: #ffffffc4;
+  box-shadow: 0 8px 32px #1f26875e;
+}
+
+.titulotopo h1 {
+  font-size: 60px;
+  color: #3c184e;
+  text-align: center;
+  font-weight: 800;
+  margin: 0 0 40px 0;
+}
+
+.linkw {
+  width: 200px;
+  padding: 10px 25px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #3c184e;
+  text-align: center;
+  font-size: 20px;
+}
+.linkw a {
+  text-decoration: none;
+  color: #fff;
+}
+.linkw img {
+  width: 20px;
+}
+
+/*fim da estilização do titulo principal*/
+
+/*inicio da estilizaçõa seção serviços*/
+.servicos {
+  width: 100%;
+}
+
+.servicos h3 {
+  font-size: 36px;
+  color: #3c184e;
+  text-align: center;
+  margin: 0 0 45px 0;
+}
+
+.lista01 {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  color: #3c184e;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.lista01 li {
+  margin: 0 0 20px 0; /*caso essa propriedade seja colocado junto com os outros não vai dar certo
+  a margen será aplicada ao ul e não em cada item-li*/
+}
+
+.destaque {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.imagens {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.imagens img {
+  border-radius: 5px;
+  box-shadow: 3px 6px 10px 6px #0000005c; /*separado assim define essas configurações para cada imagem
+  se fizer junto com o .imagens vai definir as configrações para o container e vai ficar aparecendo 
+  ele*/
+}
+/*fim*/
+
+/*inicio estilização da daixa de redes sociais*/
+.redessociais {
+  padding: 120px 80px;
+  background-color: #3c184e;
+  text-align: center;
+}
+.faixa {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+
+.faixa .destaque {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.redes-sociais {
+  text-decoration: none;
+}
+
+.redes-sociais img {
+  margin: 0 20px 0 20px;
+  width: 50px;
+  height: 50px;
+}
+/*fim*/
+
+/*inicio estilização das marcas*/
+.marcas {
+  width: 100%;
+  padding: 120px 80px;
+}
+
+.marcas h3 {
+  font-size: 36px;
+  color: #3c184e;
+  text-align: center;
+  margin: 0 0 45px 0;
+}
+
+.linha {
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+}
+
+.linha img {
+  width: 148px;
+  height: 148px;
+  margin: 0 15px 0 15px;
+}
+/*fim*/
+
+/*inicio estilização de localização*/
+.localiza {
+  width: 100%;
+  padding: 120px 80px;
+  text-align: center;
+  color: #3c184e;
+  text-align: center;
+  margin: 0 0 45px 0;
+}
+
+.localiza h3 {
+  font-size: 36px;
+  margin: 0 0 45px 0;
+}
+
+.localiza p {
+  font-size: 20px;
+}
+
+.localiza iframe {
+  width: 800px;
+  height: 450px;
+}
+/*fim*/
+
+.rodape {
+  padding: 10px 0;
+  background-color: #3c184e;
+}
+
+.rodape p {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}

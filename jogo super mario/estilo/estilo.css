@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+  width: 100%;
+  height: 500px;
+  border-bottom: 15px solid rgb(41, 211, 98);
+  margin: 0 auto;
+  position: relative;
+  /*pois quero que asimagens respeitem a delimitação do quadrado*/
+  overflow: hidden;
+  /*se algo sair da delimitação do quadro não vai mais aparecer*/
+  background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.pipe {
+  position: absolute;
+  /*como vamos trabalhar com varias imagens, colocamos o position:absolute para que nenhuma interfira no comportamento da outra*/
+  bottom: 0; /*a imagem fica embaixo*/
+  width: 80px;
+  animation: pipe-animation 1.5s infinite linear; /*aqui eu to usando a animação que foi definida*/
+}
+
+.mario {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump {
+  animation: mario-animation 500ms ease-out;
+}
+
+.clouds {
+  position: absolute;
+  /*pra não interferir nas outras imagens*/
+  width: 400px;
+  animation: clouds-animation 20s infinite;
+}
+
+/*Aqui vou criar a primeira animação, a da imagem pipe*/
+@keyframes pipe-animation {
+  /*primeiro defino onde a animação começa*/
+  from {
+    right: -80px; /*para que a imagem não apareça do nada e sim venha surgindo aos poucos de acordo com a animação*/
+  }
+  /*depois onde ela vai terminar*/
+  to {
+    right: 100%;
+  }
+}
+
+/*agora vou criar uma animação para fazer o mario pular*/
+@keyframes mario-animation {
+  0% {
+    /*começo da animação*/
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    /*meio da animação*/
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    /*fim da animação*/
+    bottom: 0;
+  }
+}
+
+/*animação das nuvens*/
+@keyframes clouds-animation {
+  from {
+    right: -400px;
+  }
+  to {
+    right: 100%;
+  }
+}

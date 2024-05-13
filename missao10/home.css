@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-right: 0;
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.781);
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.limitar-secao {
+  width: 1024px;
+}
+
+.container-topo {
+  background-color: #54cde5;
+}
+
+.topo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /*alinhando os intens no centro verticalmente*/
+}
+
+.links-topo {
+  font-size: 20px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.links-topo a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.links-topo a:hover {
+  color: #00546e;
+}
+/*fim topo*/
+
+.titulo-fundo {
+  background-image: url("./Clinica/assets/recepcao.png");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+}
+
+.titulo {
+  text-transform: uppercase;
+
+  color: #ffffffc5;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.container-sobre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-titulo {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.sobre02 {
+  display: flex;
+  flex-direction: row;
+}
+
+.descricao {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1024px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fotos img {
+  width: 100%;
+  border-bottom: 6px solid #54cde5;
+}
+
+.fotos figcaption {
+  text-align: center;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.781);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.box-especialidade {
+  border-radius: 3px;
+  box-shadow: 10px 10px 10px #00546e54;
+  width: calc(100% / 3 - 40px);
+}
+
+.descricao h2 {
+  color: rgba(0, 0, 0, 0.781);
+  padding: 20px;
+}
+
+.container-especialidades a {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.container-especialidades button {
+  background-color: #54cde5;
+  width: 200px;
+  padding: 15px;
+  border: none;
+  box-shadow: 10px 10px 10px #00546e54;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.container-localizacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-localizacao div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 1024px;
+}
+
+iframe {
+  height: 600px;
+}
+
+.container-localizacao p {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.container-localizacao span {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #54cde5;
+}
+
+footer img {
+  width: 200px;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.rodape p {
+  font-size: 18px;
+  line-height: 35px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .topo {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .titulo {
+    font-size: 29px;
+  }
+
+  .titulo-fundo {
+    height: 300px;
+  }
+
+  .sobre02 img {
+    display: none;
+  }
+
+  .box-especialidade {
+    width: calc(75% / 1);
+  }
+
+  iframe {
+    width: calc(75% / 1);
+  }
+
+  .container-localizacao p {
+    width: calc(75% / 1);
+  }
+}
+
+@media (max-width: 425px) {
+  .container-topo {
+    width: 100%;
+    justify-content: center;
+  }
+  .container-topo div {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-especialidade {
+    width: 100%;
+  }
+  .topo div img {
+    width: 150px;
+  }
+  .topo .links-topo {
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    border-top: 1px solid #5f6d727e;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .topo .links-topo a {
+    margin: 12px;
+  }
+  .titulo h1 {
+    font-size: 26px;
+  }
+  .fotos {
+    width: 380px;
+  }
+  .box-especialidade {
+    margin-bottom: 10px;
+  }
+  .container-localizacao {
+    width: 100%;
+  }
+  iframe {
+    width: 425px;
+  }
+}
